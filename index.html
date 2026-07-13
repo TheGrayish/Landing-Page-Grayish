@@ -22,6 +22,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    })();
+  </script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -56,6 +65,10 @@
       </nav>
 
       <div class="header__actions">
+        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">
+          <i class="bi bi-moon-stars theme-toggle__dark"></i>
+          <i class="bi bi-sun theme-toggle__light"></i>
+        </button>
         <div class="lang-switch" role="group" aria-label="Language">
           <button id="btn-es" class="lang-switch__btn active" onclick="setLang('es')">ES</button>
           <button id="btn-en" class="lang-switch__btn" onclick="setLang('en')">EN</button>
@@ -385,8 +398,8 @@
         .filter(Boolean)
         .slice(0, 6);
       if (!items.length) return;
-      track.innerHTML = items.map(({ url, id }) =>
-        `<blockquote class="tiktok-embed" cite="${url}" data-video-id="${id}"><section></section></blockquote>`
+      track.innerHTML = items.map(({ url, id }, i) =>
+        `<blockquote class="tiktok-embed" style="--clip-i:${i}" cite="${url}" data-video-id="${id}"><section></section></blockquote>`
       ).join('');
       wrap.removeAttribute('hidden');
       const script = document.createElement('script');
@@ -403,6 +416,13 @@
     document.getElementById('easter-egg-close').addEventListener('click', () => {
       document.getElementById('easter-egg-toggle').checked = false;
     });
+
+    function toggleTheme() {
+      var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+      var next = isLight ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
   </script>
 
   <script>
