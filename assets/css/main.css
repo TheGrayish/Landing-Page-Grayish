@@ -994,11 +994,15 @@ body.scrolled .header {
 }
 
 .clips__track > .tiktok-embed {
-  flex: 0 0 auto;
+  flex: 0 0 325px;
+  width: 325px !important;
+  max-width: 325px !important;
+  min-width: 325px !important;
   scroll-snap-align: start;
   margin: 0 !important;
   border-radius: var(--radius-card);
   overflow: hidden;
+  box-shadow: var(--shadow-md);
 }
 
 /*--------------------------------------------------------------
