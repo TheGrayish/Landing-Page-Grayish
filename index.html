@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Abner Yezael Gomez Arellano - Desarrollador de Software</title>
+  <meta name="description" content="Portafolio y curriculum de Abner Yezael Gomez Arellano (TheGrayish): desarrollador de software especializado en TypeScript, Laravel y Next.js. Programacion, anime, videojuegos y magia.">
+  <meta name="keywords" content="Abner Yezael Gomez Arellano, TheGrayish, desarrollador de software, portafolio, curriculum, Guadalajara">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0c0e'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23e8663d' text-anchor='middle'%3EAY%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERNPFTRCM1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ERNPFTRCM1');
+</script>
+
+<body class="index-page">
+
+  <div id="preloader"></div>
+
+  <header id="header" class="header">
+    <div class="header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__mark">AY</span>
+        <span class="logo__text">Abner Yezael</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#about" data-i18n="nav_about">Sobre mi</a></li>
+          <li><a href="#experience" data-i18n="nav_experience">Experiencia</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+          <li><a href="#personal" data-i18n="nav_personal">Personal</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle bi bi-list"></i>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button id="btn-es" class="lang-switch__btn active" onclick="setLang('es')">ES</button>
+          <button id="btn-en" class="lang-switch__btn" onclick="setLang('en')">EN</button>
+        </div>
+        <a href="assets/cv/Abner-Gomez-CV.pdf" target="_blank" class="btn btn--ghost btn--sm nav-cta" data-i18n="cv_download">Descargar CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content" data-aos="fade-up">
+          <h1 class="hero__title">
+            <span class="hero__greeting" data-i18n="hero_greeting">Hola, soy</span>
+            Abner Yezael
+          </h1>
+          <p class="hero__role" data-i18n="hero_role">Desarrollador de Software</p>
+          <p class="hero__subtext" data-i18n="hero_sub">Construyo productos backend y frontend con TypeScript, Laravel y Next.js. Fuera del codigo: anime, videojuegos y magia.</p>
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary" data-i18n="hero_cta_primary">Ver experiencia</a>
+            <a href="assets/cv/Abner-Gomez-CV.pdf" target="_blank" class="btn btn--ghost" data-i18n="cv_download">Descargar CV</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-aos="fade-in" data-aos-delay="150">
+          <div class="hero__photo-frame">
+            <img src="assets/img/20240803_011219.jpg" alt="Abner Yezael Gomez Arellano" class="hero__photo">
+          </div>
+          <div class="hero__meta"><i class="bi bi-geo-alt"></i><span data-i18n="hero_location">Guadalajara, Mexico</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech stack marquee -->
+    <section class="stack-marquee" aria-label="Tech stack">
+      <div class="stack-marquee__track" id="stack-track"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container about__inner" data-aos="fade-up">
+        <h2 data-i18n="about_title">Sobre mi</h2>
+        <p data-i18n="about_text">Soy ingeniero en informatica por la Universidad de Guadalajara y desarrollador de software enfocado en TypeScript, Laravel y Next.js. Actualmente construyo integraciones empresariales en Atti Solutions y una plataforma de gestion academica para el Hospital Civil de Guadalajara. Fuera del trabajo disfruto el anime, los videojuegos y la magia: tres formas distintas de contar historias que tambien influyen en como diseno software.</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <h2 data-i18n="exp_title">Experiencia</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item" data-aos="fade-up">
+            <div class="timeline__marker"></div>
+            <div class="timeline__head">
+              <h3 data-i18n="exp1_role">Desarrollador de Software</h3>
+              <span class="timeline__dates" data-i18n="exp1_dates">Mayo 2025 - Presente</span>
+            </div>
+            <p class="timeline__company" data-i18n="exp1_company">Atti Solutions Mexico &middot; Oaxaca, Mexico</p>
+            <ul class="timeline__list" data-i18n="exp1_bullets">
+              <li>Desarrollo de plataformas y servicios internos con Laravel, Next.js, .NET y Python.</li>
+              <li>Diseno de APIs e integraciones empresariales, incluyendo el sistema GOP HORUS.</li>
+              <li>Flujos de trabajo en Git, revisiones de pull requests e integracion continua.</li>
+              <li>Optimizacion de rendimiento y confiabilidad en multiples servicios.</li>
+            </ul>
+            <p class="timeline__impact" data-i18n="exp1_impact"><strong>Impacto</strong>Mejore la estabilidad de multiples plataformas y ayude a estandarizar las practicas de despliegue del equipo.</p>
+          </article>
+
+          <article class="timeline__item" data-aos="fade-up">
+            <div class="timeline__marker"></div>
+            <div class="timeline__head">
+              <h3 data-i18n="exp2_role">Desarrollador de Software Interno</h3>
+              <span class="timeline__dates" data-i18n="exp2_dates">Septiembre 2025 - Marzo 2026</span>
+            </div>
+            <p class="timeline__company" data-i18n="exp2_company">Hospital Civil de Guadalajara &middot; Guadalajara, Mexico</p>
+            <ul class="timeline__list" data-i18n="exp2_bullets">
+              <li>Desarrollo de una plataforma de gestion academica para estudiantes y profesionales de la salud.</li>
+              <li>Modulos frontend en TypeScript sobre frameworks web modernos.</li>
+              <li>Servicios backend, integraciones y diseno de base de datos.</li>
+              <li>Planificacion tecnica, revision de codigo y mejoras de UI/UX.</li>
+            </ul>
+            <p class="timeline__impact" data-i18n="exp2_impact"><strong>Impacto</strong>Una plataforma que agiliza la gestion academica y la comunicacion para cientos de estudiantes y profesionales del area de la salud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <h2 data-i18n="skills_title">Habilidades</h2>
+        </div>
+        <div class="skills__groups" data-aos="fade-up" data-aos-delay="100">
+          <div class="skills__group">
+            <h3 data-i18n="skills_lang">Lenguajes</h3>
+            <div class="skills__pills">
+              <span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">PHP</span><span class="tag">C++</span><span class="tag">C#</span><span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 data-i18n="skills_frameworks">Frameworks &amp; librerias</h3>
+            <div class="skills__pills">
+              <span class="tag">React</span><span class="tag">Laravel</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">.NET</span><span class="tag">TailwindCSS</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 data-i18n="skills_tools">Herramientas</h3>
+            <div class="skills__pills">
+              <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Visual Studio</span><span class="tag">Bitbucket</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 data-i18n="skills_db">Bases de datos</h3>
+            <div class="skills__pills">
+              <span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">MariaDB</span><span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <h2 data-i18n="projects_title">Proyectos</h2>
+          <p data-i18n="projects_sub">Un vistazo a lo que he construido dentro y fuera del trabajo.</p>
+        </div>
+
+        <div class="projects__flagship">
+          <article class="project-card project-card--flagship" data-aos="fade-up">
+            <span class="project-card__status"><span class="status-dot"></span><span data-i18n="octoapp_status">Beta abierta</span></span>
+            <h3>OctoApp</h3>
+            <p data-i18n="octoapp_text">Punto de venta con gestion de rutas para que el negocio se controle desde cualquier lugar. Ademas del POS: almacenes, reportes, finanzas, compras y tareas al estilo Trello.</p>
+            <div class="project-card__tags">
+              <span class="tag">POS</span><span class="tag">Rutas</span><span class="tag">Multi-modulo</span>
+            </div>
+            <a href="https://octoapp.mx" target="_blank" class="project-card__link"><i class="bi bi-box-arrow-up-right"></i><span data-i18n="visit_site">Visitar sitio</span></a>
+          </article>
+
+          <article class="project-card project-card--flagship" data-aos="fade-up" data-aos-delay="100">
+            <span class="project-card__status project-card__status--pending" data-i18n="dualsnap_status">Proximamente en Play Store</span>
+            <h3>DualSnap</h3>
+            <p data-i18n="dualsnap_text">App al estilo BeReal que no depende de internet: foto y video con ambas camaras a la vez, filtros, flash y captura asincronica. Su suscripcion premium mejora la calidad de imagen y quita la publicidad.</p>
+            <div class="project-card__tags">
+              <span class="tag">Android</span><span class="tag">Camara dual</span><span class="tag">Suscripciones</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card span-3" data-aos="fade-up">
+            <h3 data-i18n="proj1_title">Med-Time</h3>
+            <p data-i18n="proj1_text">Gestion de citas medicas en tiempo real con expedientes de pacientes y recordatorios automatizados por WhatsApp.</p>
+            <div class="project-card__tags">
+              <span class="tag">Next.js 14</span><span class="tag">Supabase</span><span class="tag">TailwindCSS</span>
+            </div>
+            <a href="https://med-time-calendar.vercel.app/" target="_blank" class="project-card__link"><i class="bi bi-box-arrow-up-right"></i><span data-i18n="visit_site">Visitar sitio</span></a>
+          </article>
+
+          <article class="project-card span-3" data-aos="fade-up" data-aos-delay="100">
+            <h3 data-i18n="proj5_title">Sistema-Experto-VALO</h3>
+            <p data-i18n="proj5_text">Sistema experto que analiza pick rates de VCT y de competitivo (parche 10.00) para recomendar la mejor composicion de equipo en Valorant segun el agente, el mapa y el estilo de juego elegido.</p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span><span class="tag">Analisis de datos</span>
+            </div>
+            <a href="https://github.com/TheGrayish/Sistema-Experto-VALO" target="_blank" class="project-card__link"><i class="bi bi-github"></i><span data-i18n="proj_link">Ver repositorio</span></a>
+          </article>
+
+          <article class="project-card span-2" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-i18n="proj2_title">Base-baileys-memory</h3>
+            <p data-i18n="proj2_text">Bot de WhatsApp sobre la API de Baileys con endpoints propios para gestion de citas y mensajeria automatizada.</p>
+            <div class="project-card__tags">
+              <span class="tag">JavaScript</span><span class="tag">Docker</span>
+            </div>
+            <span class="project-card__link project-card__link--muted"><i class="bi bi-lock"></i><span data-i18n="proj_private">Repositorio privado</span></span>
+          </article>
+
+          <article class="project-card span-2" data-aos="fade-up" data-aos-delay="300">
+            <h3 data-i18n="proj3_title">Grayish-BOT-DISCORD</h3>
+            <p data-i18n="proj3_text">Bot de musica modular para Discord con colas, comandos slash y soporte para YouTube, Spotify y SoundCloud.</p>
+            <div class="project-card__tags">
+              <span class="tag">JavaScript</span><span class="tag">Discord.js</span>
+            </div>
+            <a href="https://github.com/TheGrayish/Grayish-BOT-DISCORD" target="_blank" class="project-card__link"><i class="bi bi-github"></i><span data-i18n="proj_link">Ver repositorio</span></a>
+          </article>
+
+          <article class="project-card span-2" data-aos="fade-up" data-aos-delay="400">
+            <h3 data-i18n="proj4_title">Data-warehouse-Videogames</h3>
+            <p data-i18n="proj4_text">Data warehouse y modelos de machine learning sobre datasets de Kaggle para predecir tendencias de popularidad.</p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span><span class="tag">MariaDB</span><span class="tag">Streamlit</span>
+            </div>
+            <a href="https://github.com/TheGrayish/Data-warehouse-Videogames" target="_blank" class="project-card__link"><i class="bi bi-github"></i><span data-i18n="proj_link">Ver repositorio</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & honors -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <h2 data-i18n="certs_title">Certificaciones</h2>
+        </div>
+
+        <div class="certifications__grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-card"><i class="bi bi-patch-check"></i><div><h3>Data Science Tools</h3><span>IBM</span></div></div>
+          <div class="cert-card"><i class="bi bi-patch-check"></i><div><h3 data-i18n="cert2_title">Data Science Foundations - Level 1</h3><span>IBM</span></div></div>
+          <div class="cert-card"><i class="bi bi-patch-check"></i><div><h3 data-i18n="cert3_title">Fundamentals of Level Design con Unreal Engine</h3><span>Epic Games</span></div></div>
+          <div class="cert-card"><i class="bi bi-patch-check"></i><div><h3 data-i18n="cert4_title">Unreal Engine Fundamentals</h3><span>Epic Games</span></div></div>
+          <div class="cert-card"><i class="bi bi-patch-check"></i><div><h3 data-i18n="cert5_title">Introduction to Game Design</h3><span>Epic Games</span></div></div>
+          <div class="cert-card"><i class="bi bi-patch-check"></i><div><h3 data-i18n="cert6_title">Jr Penetration Tester</h3><span>TryHackMe</span></div></div>
+        </div>
+
+        <div class="honor-banner" data-aos="fade-up">
+          <i class="bi bi-trophy"></i>
+          <p data-i18n="honor_text">Coordinacion de informatica, 1er Congreso de Innovacion de la Salud - Hospital Civil de Guadalajara (2025).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal -->
+    <section id="personal" class="personal">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <h2 data-i18n="personal_title">Fuera del codigo</h2>
+          <p data-i18n="personal_sub">Anime, magia y hacer contenido: las mismas ganas de crear, solo que sin compilador.</p>
+        </div>
+
+        <div class="interests" data-aos="fade-up" data-aos-delay="100">
+          <div class="interest-chip"><i class="bi bi-collection-play"></i><span data-i18n="interest_anime">Anime</span></div>
+          <div class="interest-chip"><i class="bi bi-magic"></i><span data-i18n="interest_magic">Magia</span></div>
+          <div class="interest-chip"><i class="bi bi-camera-reels"></i><span data-i18n="interest_content">Hacer contenido</span></div>
+        </div>
+
+        <div class="clips" id="clips-wrap" hidden>
+          <h3 class="clips__label" data-i18n="clips_label">Clips</h3>
+          <div class="clips__track" id="clips-track"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="zoom-in">
+        <div class="section-head">
+          <h2 data-i18n="contact_title">Hablemos</h2>
+          <p data-i18n="contact_sub">Proyecto, chamba o solo quieres hablar de anime. Aqui me encuentras.</p>
+        </div>
+
+        <div class="contact__links">
+          <a href="mailto:yezael.work@gmail.com" class="contact__link"><i class="bi bi-envelope"></i>yezael.work@gmail.com</a>
+          <a href="tel:+526241336367" class="contact__link"><i class="bi bi-telephone"></i>+52 624 133 6367</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://github.com/TheGrayish" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/abner-yezael-g%C3%B3mez-arellano-590072168/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/the_grayish/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@thegrayish" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Abner Yezael Gomez Arellano. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+      <p><a href="https://github.com/TheGrayish">@TheGrayish</a></p>
+    </div>
+  </footer>
+
+  <a href="#hero" id="scroll-top" class="scroll-top" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></a>
+
+  <div class="easter-egg">
+    <input type="checkbox" id="easter-egg-toggle" class="easter-egg__input" aria-label="Minijuego secreto">
+    <label for="easter-egg-toggle" class="easter-egg__switch"><i class="bi bi-controller"></i></label>
+    <div class="easter-egg__panel">
+      <button type="button" class="easter-egg__close" id="easter-egg-close" aria-label="Cerrar">&times;</button>
+      <iframe title="Lumber Jack" src="https://tbot.xyz/lumber/" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script>
+    const STACK_ICONS = [
+      ["typescript", "TypeScript"], ["javascript", "JavaScript"], ["python", "Python"],
+      ["php", "PHP"], ["react", "React"], ["laravel", "Laravel"],
+      ["nextjs", "Next.js"], ["nodejs", "Node.js"], ["dot-net", ".NET"],
+      ["tailwindcss", "TailwindCSS"], ["git", "Git"], ["docker", "Docker"],
+      ["postgresql", "PostgreSQL"], ["mongodb", "MongoDB"]
+    ];
+
+    function buildStackMarquee() {
+      const track = document.getElementById('stack-track');
+      if (!track) return;
+      const itemsHtml = STACK_ICONS.map(([slug, label]) =>
+        `<span class="stack-marquee__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${slug}/${slug}-original.svg" alt="" loading="lazy"><span>${label}</span></span>`
+      ).join('');
+      track.innerHTML = itemsHtml + itemsHtml;
+    }
+    buildStackMarquee();
+
+    // Auto-synced from the @thegrayish TikTok account via a Netlify Function
+    // (see /netlify/functions) that holds the OAuth token and calls TikTok's
+    // Display API on a schedule. Same-origin once deployed on Netlify.
+    const TIKTOK_FEED_URL = '/.netlify/functions/tiktok-feed';
+
+    function renderTikTokClips(videos) {
+      const wrap = document.getElementById('clips-wrap');
+      const track = document.getElementById('clips-track');
+      if (!wrap || !track) return;
+      const items = (videos || [])
+        .map(v => {
+          const match = (v.url || '').match(/video\/(\d+)/);
+          return match ? { url: v.url, id: match[1] } : null;
+        })
+        .filter(Boolean)
+        .slice(0, 6);
+      if (!items.length) return;
+      track.innerHTML = items.map(({ url, id }) =>
+        `<blockquote class="tiktok-embed" cite="${url}" data-video-id="${id}"><section></section></blockquote>`
+      ).join('');
+      wrap.removeAttribute('hidden');
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.tiktok.com/embed.js';
+      document.body.appendChild(script);
+    }
+
+    fetch(TIKTOK_FEED_URL)
+      .then(res => res.ok ? res.json() : Promise.reject(new Error('feed request failed')))
+      .then(data => renderTikTokClips(data.videos))
+      .catch(() => { /* worker not deployed yet or offline: clips section stays hidden */ });
+
+    document.getElementById('easter-egg-close').addEventListener('click', () => {
+      document.getElementById('easter-egg-toggle').checked = false;
+    });
+  </script>
+
+  <script>
+    const translations = {
+      es: {
+        nav_about: 'Sobre mi', nav_experience: 'Experiencia', nav_projects: 'Proyectos',
+        nav_personal: 'Personal', nav_contact: 'Contacto', cv_download: 'Descargar CV',
+
+        hero_greeting: 'Hola, soy', hero_role: 'Desarrollador de Software',
+        hero_sub: 'Construyo productos backend y frontend con TypeScript, Laravel y Next.js. Fuera del codigo: anime, videojuegos y magia.',
+        hero_cta_primary: 'Ver experiencia', hero_location: 'Guadalajara, Mexico',
+
+        about_title: 'Sobre mi',
+        about_text: 'Soy ingeniero en informatica por la Universidad de Guadalajara y desarrollador de software enfocado en TypeScript, Laravel y Next.js. Actualmente construyo integraciones empresariales en Atti Solutions y una plataforma de gestion academica para el Hospital Civil de Guadalajara. Fuera del trabajo disfruto el anime, los videojuegos y la magia: tres formas distintas de contar historias que tambien influyen en como diseno software.',
+
+        exp_title: 'Experiencia',
+        exp1_role: 'Desarrollador de Software', exp1_dates: 'Mayo 2025 - Presente',
+        exp1_company: 'Atti Solutions Mexico &middot; Oaxaca, Mexico',
+        exp1_bullets: '<li>Desarrollo de plataformas y servicios internos con Laravel, Next.js, .NET y Python.</li><li>Diseno de APIs e integraciones empresariales, incluyendo el sistema GOP HORUS.</li><li>Flujos de trabajo en Git, revisiones de pull requests e integracion continua.</li><li>Optimizacion de rendimiento y confiabilidad en multiples servicios.</li>',
+        exp1_impact: '<strong>Impacto</strong>Mejore la estabilidad de multiples plataformas y ayude a estandarizar las practicas de despliegue del equipo.',
+
+        exp2_role: 'Desarrollador de Software Interno', exp2_dates: 'Septiembre 2025 - Marzo 2026',
+        exp2_company: 'Hospital Civil de Guadalajara &middot; Guadalajara, Mexico',
+        exp2_bullets: '<li>Desarrollo de una plataforma de gestion academica para estudiantes y profesionales de la salud.</li><li>Modulos frontend en TypeScript sobre frameworks web modernos.</li><li>Servicios backend, integraciones y diseno de base de datos.</li><li>Planificacion tecnica, revision de codigo y mejoras de UI/UX.</li>',
+        exp2_impact: '<strong>Impacto</strong>Una plataforma que agiliza la gestion academica y la comunicacion para cientos de estudiantes y profesionales del area de la salud.',
+
+        skills_title: 'Habilidades', skills_lang: 'Lenguajes', skills_frameworks: 'Frameworks &amp; librerias',
+        skills_tools: 'Herramientas', skills_db: 'Bases de datos',
+
+        projects_title: 'Proyectos', projects_sub: 'Un vistazo a lo que he construido dentro y fuera del trabajo.',
+        proj_link: 'Ver repositorio', proj_private: 'Repositorio privado', visit_site: 'Visitar sitio',
+        octoapp_status: 'Beta abierta',
+        octoapp_text: 'Punto de venta con gestion de rutas para que el negocio se controle desde cualquier lugar. Ademas del POS: almacenes, reportes, finanzas, compras y tareas al estilo Trello.',
+        dualsnap_status: 'Proximamente en Play Store',
+        dualsnap_text: 'App al estilo BeReal que no depende de internet: foto y video con ambas camaras a la vez, filtros, flash y captura asincronica. Su suscripcion premium mejora la calidad de imagen y quita la publicidad.',
+        proj1_title: 'Med-Time', proj1_text: 'Gestion de citas medicas en tiempo real con expedientes de pacientes y recordatorios automatizados por WhatsApp.',
+        proj2_title: 'Base-baileys-memory', proj2_text: 'Bot de WhatsApp sobre la API de Baileys con endpoints propios para gestion de citas y mensajeria automatizada.',
+        proj3_title: 'Grayish-BOT-DISCORD', proj3_text: 'Bot de musica modular para Discord con colas, comandos slash y soporte para YouTube, Spotify y SoundCloud.',
+        proj4_title: 'Data-warehouse-Videogames', proj4_text: 'Data warehouse y modelos de machine learning sobre datasets de Kaggle para predecir tendencias de popularidad.',
+        proj5_title: 'Sistema-Experto-VALO', proj5_text: 'Sistema experto que analiza pick rates de VCT y de competitivo (parche 10.00) para recomendar la mejor composicion de equipo en Valorant segun el agente, el mapa y el estilo de juego elegido.',
+
+        certs_title: 'Certificaciones',
+        cert2_title: 'Data Science Foundations - Level 1', cert3_title: 'Fundamentals of Level Design con Unreal Engine',
+        cert4_title: 'Unreal Engine Fundamentals', cert5_title: 'Introduction to Game Design', cert6_title: 'Jr Penetration Tester',
+        honor_text: 'Coordinacion de informatica, 1er Congreso de Innovacion de la Salud - Hospital Civil de Guadalajara (2025).',
+
+        personal_title: 'Fuera del codigo',
+        personal_sub: 'Anime, magia y hacer contenido: las mismas ganas de crear, solo que sin compilador.',
+        interest_anime: 'Anime', interest_magic: 'Magia', interest_content: 'Hacer contenido',
+        clips_label: 'Clips',
+
+        contact_title: 'Hablemos', contact_sub: 'Proyecto, chamba o solo quieres hablar de anime. Aqui me encuentras.',
+        footer_rights: 'Todos los derechos reservados.'
+      },
+      en: {
+        nav_about: 'About', nav_experience: 'Experience', nav_projects: 'Projects',
+        nav_personal: 'Personal', nav_contact: 'Contact', cv_download: 'Download CV',
+
+        hero_greeting: "Hi, I'm", hero_role: 'Software Developer',
+        hero_sub: "I build backend and frontend products with TypeScript, Laravel and Next.js. Outside of code: anime, videogames and magic.",
+        hero_cta_primary: 'View experience', hero_location: 'Guadalajara, Mexico',
+
+        about_title: 'About me',
+        about_text: "I'm a computer engineering student at Universidad de Guadalajara and a software developer focused on TypeScript, Laravel and Next.js. I currently build enterprise integrations at Atti Solutions and an academic management platform for Hospital Civil de Guadalajara. Outside of work I enjoy anime, videogames and magic: three different ways of telling stories that also shape how I design software.",
+
+        exp_title: 'Experience',
+        exp1_role: 'Software Developer', exp1_dates: 'May 2025 - Present',
+        exp1_company: 'Atti Solutions Mexico &middot; Oaxaca, Mexico',
+        exp1_bullets: '<li>Built internal platforms and services using Laravel, Next.js, .NET and Python.</li><li>Designed APIs and enterprise integrations, including the GOP HORUS system.</li><li>Implemented Git branching workflows, pull request reviews and continuous integration.</li><li>Improved performance and reliability across multiple services.</li>',
+        exp1_impact: '<strong>Impact</strong>Improved stability across multiple platforms and helped standardize the team\'s deployment practices.',
+
+        exp2_role: 'Internal Software Developer', exp2_dates: 'September 2025 - March 2026',
+        exp2_company: 'Hospital Civil de Guadalajara &middot; Guadalajara, Mexico',
+        exp2_bullets: '<li>Built an academic management platform for students and healthcare professionals.</li><li>Developed frontend modules in TypeScript using modern web frameworks.</li><li>Backend services, integrations and database design.</li><li>Technical planning, code review and UI/UX improvements.</li>',
+        exp2_impact: '<strong>Impact</strong>A platform that streamlines academic management and communication for hundreds of students and healthcare professionals.',
+
+        skills_title: 'Skills', skills_lang: 'Languages', skills_frameworks: 'Frameworks &amp; libraries',
+        skills_tools: 'Tools', skills_db: 'Databases',
+
+        projects_title: 'Projects', projects_sub: 'A look at what I have built at work and on my own.',
+        proj_link: 'View repository', proj_private: 'Private repository', visit_site: 'Visit site',
+        octoapp_status: 'Open beta',
+        octoapp_text: 'Point of sale with route management so the business can be run from anywhere. Beyond POS: warehouses, reports, finance, purchasing and Trello-style task boards.',
+        dualsnap_status: 'Coming soon to Play Store',
+        dualsnap_text: 'A BeReal-style app that does not require an internet connection: photo and video with both cameras at once, filters, flash and asynchronous capture. Its premium subscription improves image quality and removes ads.',
+        proj1_title: 'Med-Time', proj1_text: 'Full-stack medical appointment management with patient records, calendar scheduling and automated reminders.',
+        proj2_title: 'Base-baileys-memory', proj2_text: 'WhatsApp bot built on the Baileys API with custom endpoints for appointment management and automated messaging.',
+        proj3_title: 'Grayish-BOT-DISCORD', proj3_text: 'Modular Discord music bot with queue management, slash commands and support for YouTube, Spotify and SoundCloud.',
+        proj4_title: 'Data-warehouse-Videogames', proj4_text: 'Data warehouse and machine learning models over Kaggle datasets to predict genre popularity trends.',
+        proj5_title: 'Sistema-Experto-VALO', proj5_text: 'Expert system that analyzes VCT and ranked pick rates (patch 10.00) to recommend the best Valorant team composition based on the chosen agent, map and playstyle.',
+
+        certs_title: 'Certifications',
+        cert2_title: 'Data Science Foundations - Level 1', cert3_title: 'Fundamentals of Level Design with Unreal Engine',
+        cert4_title: 'Unreal Engine Fundamentals', cert5_title: 'Introduction to Game Design', cert6_title: 'Jr Penetration Tester',
+        honor_text: 'IT Coordination, 1st Health Innovation Congress - Hospital Civil de Guadalajara (2025).',
+
+        personal_title: 'Outside of code',
+        personal_sub: 'Anime, magic and making content: the same drive to create, just without a compiler.',
+        interest_anime: 'Anime', interest_magic: 'Magic', interest_content: 'Making content',
+        clips_label: 'Clips',
+
+        contact_title: "Let's talk", contact_sub: 'A project, a job, or you just want to talk about anime. This is where you find me.',
+        footer_rights: 'All rights reserved.'
+      }
+    };
+
+    function setLang(lang) {
+      const map = translations[lang] || translations.es;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (map[key]) el.innerHTML = map[key];
+      });
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    setLang('es');
+  </script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
